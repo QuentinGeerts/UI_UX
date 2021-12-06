@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // -- Types --
+        console.log(typeof 10);
+        // > number
+
+        console.log(typeof "10");
+        // > string = chaine de caractères
+
+        console.log(typeof 'a');
+        // > string
+
+        console.log(typeof true);
+        // > boolean : 2 valeurs possibles : true ou false
+
+        console.log(typeof {
+            nom: "Geerts",
+            prenom: "Quentin"
+        });
+        // > object : 
+
+        // -- Opérateurs de comparaison --
+
+        // ==  : Vérifier la valeur
+        // === : Vérifier la valeur ET type
+        console.log(10 === "10"); //  Égaux
+        // > false
+
+        // !=  : Vérifier la valeur
+        // !== : Vérifier la valeur ET type
+        console.log(10 !== "10"); // Différents
+        // > true
+
+        console.log(10 > 10); // Supérieur "strict"
+        // > false
+
+        console.log(10 >= 10); // Supérieur ou égal
+        // > true
+
+        console.log(10 < 10); // Inférieur "strict"
+        // > false
+
+        console.log(10 <= 10); // Inférieur ou égal
+        // > true
+
+        // -- Opérateurs logiques -- 
+        console.error("Opérateurs logiques");
+        // But : réaliser plusieurs comparaison pour une condition
+
+        // Si je veux avoir une nombre compris entre 1 et 10
+        // nombre >= 1 ET nombre <= 10
+
+        // nombre = 5
+
+        console.warn("ET");
+        // ET : && : les deux conditions doivent être à true
+        // pour retourner un true
+        console.log(11 >= 1); // true
+        console.log(11 <= 10); // false
+
+        console.log(11 >= 1 && 11 <= 10);
+        //            true       false
+
+        // OU : || : l'une des deux ou les conditions doivent être à true
+        // pour retourner un true
+        console.warn("OU");
+        let number = 9;
+        console.log(number < 10); // true
+        console.log(number === 44); // false
+
+        console.log(number < 10 || number === 44); // true
+        //              true           false
+
+        // Négation : ! : l'inverse du résultat booléen
+        console.warn("Négation");
+
+        console.log(true); // true
+        console.log(!true); // false
+        console.log(!(number < 10)); // false
+
+        console.log(false); // false
+        console.log(!false); // true
+    </script>
+</body>
+
+</html>

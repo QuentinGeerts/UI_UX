@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        // NaN : Not A Number => pas un nombre
+        console.log(isNaN(12)); // false
+        console.log(isNaN("12")); // false
+        console.log(isNaN("A")); // true
+        console.log(isNaN(true)); // false
+        console.log(isNaN(false)); // false
+
+        console.log(isNaN(Number.NaN)); // true
+
+        // -- Undefined --
+        let x = 5;
+        console.log(x);
+
+        console.log(x == undefined); // true
+
+        // -- MATH -- 
+        console.log(Math.random());
+
+        // -- Variables & Constantes --
+
+        // Type dynamique
+        // Prennent le type de la variable
+
+        // Variables dont la valeur peut changer
+        // LET
+        // VAR
+
+        // Déclaration = Réservation d'un emplacement en mémoire
+        let variable;
+
+        // Affectation = Donner une valeur à une variable
+        // Initialisation = la première affectation
+        variable = 'bonjour';
+
+
+        // Conseillé
+        let var1 = 5;
+        console.log(typeof var1 === 'number');
+
+        let var3 = true;
+        console.log(typeof var3);
+
+        // Pas conseillé
+        var var2 = 'a';
+        console.log(typeof var2);
+
+        // Variables dont la valeur ne peut plus changer
+        // CONST
+
+        // Nomenclature = UPPERCASE
+        // Constante => valeur ne peut plus changer 
+        // => donner une valeur dès sa création
+        const VALUE_MAX = 25;
+        // VALUE_MAX = 24; // Pas possible
+    </script>
+</body>
+
+</html>
