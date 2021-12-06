@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        let maVariable = "Hello";
+
+        // -- Méthodes --
+        // l'appel de méthode = déclenchement
+        direBonjour();
+        direBonjourPrenom("Quentin");
+
+        // let result = addition(1, 2);
+        // console.log(result);
+        console.log(addition(1, 2));
+
+        // Procédure : Ne renvoie rien
+        // déclaration de méthode
+        function direBonjour() {
+            let maVariable3 = "World !"
+            console.log(maVariable3);
+            console.log(maVariable);
+            console.log("Bonjour");
+            // Instructions ...
+        }
+
+        console.log(maVariable3);
+
+        function direBonjourPrenom(prenom) {
+            console.log("Bonjour " + prenom);
+            // Instructions ...
+        }
+
+        // Fonction : Renvoie qq'chose
+        function addition(nb1, nb2) {
+            // let result = nb1 + nb2;
+            // return result;
+            return nb1 + nb2;
+        }
+    </script>
+</body>
+
+</html>
