@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // const tab2 = new Array();
+        // console.log(tab2);
+        // -------------------------
+        const tab = [];
+
+        // tab[0] = 5;
+        // tab[1] = 'a';
+        // tab["bonjour"] = "world";
+
+        console.log(tab);
+        // console.log(tab["bonjour"]);
+        console.log(tab.length);
+        // -------------------------
+
+        // Ajouter des éléments dans un tableau
+        // par l'arrière : push
+        tab.push("Alice", "Edouard", "Julien");
+
+        // par l'avant : unshift
+        tab.unshift("Madeline", "Morgane", "Valérian");
+
+        tab.push("Pauline")
+
+        // Retirer des éléments dans un tableau
+        // par l'arrière : pop
+        let student = tab.pop();
+        console.log(student);
+
+        // par l'avant : shift
+        let student2 = tab.shift();
+        console.log(student2);
+
+        console.log(tab);
+
+        // Retourner un tableau : reverse
+        const tab2 = tab.slice();
+
+        tab2.reverse();
+
+        console.log(tab);
+        console.log(tab2);
+        // ----------------------
+        const ints = [45, 12, 89, 12, 65, 14, 20, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        console.log(ints.sort((a, b) => a - b));
+
+        console.log(ints.join(''));
+    </script>
+</body>
+
+</html>
