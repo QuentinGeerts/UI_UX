@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercice : DOM - 02</h1>
+
+    <ul id="list">
+        <!-- Li vont se générer avec le bouton -->
+    </ul>
+
+    <input type="text" id="itemName">
+
+    <button id="btn">Ajouter un item</button>
+
+    <script>
+        // En reprenant le code précédent, permettre à 
+        // l’utilisateur d’écrire l’élément à l’aide
+        // d’un input
+
+        const list = document.getElementById('list')
+        const btn = document.getElementById('btn')
+
+        btn.onclick = addItem;
+
+        function addItem() {
+            // Récupère mon champ pour récupérer la value
+            const input = document.getElementById('itemName')
+
+            // 1. Créer le LI
+            const li = document.createElement('li')
+
+            // 2. Modifier le LI
+            li.innerText = input.value
+
+            // 3. Ajouter le LI au UL
+            list.appendChild(li)
+
+            input.value = ""
+            input.focus();
+        }
+    </script>
+
+</body>
+
+</html>
