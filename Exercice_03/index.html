@@ -10,14 +10,27 @@
 
 <body>
 
+    <h2>Calcul de la TVA</h2>
 
     <script>
         // Calcul de la TVA
         // Écrire un programme qui :
         // 1. Demande à l’utilisateur un prix unitaire hors taxe d’un livre
         // 2. Demande à l’utilisateur la quantité de livre
-        // 3. Calcule et affiche le prix total TTC de la commande, en utilisant une TVA de 21%
-        // Pour interagir avec l’utilisateur, vous utiliserez les fonctions d’entrée/sortie prompt() et alert().
+        // 3. Calcule et affiche le prix total TTC de la commande, 
+        //    en utilisant une TVA de 21%
+        // Pour interagir avec l’utilisateur, vous utiliserez les fonctions 
+        // d’entrée/sortie prompt() et alert().
+
+        const VAT = 0.21;
+
+        let priceEVAT = prompt("Entrez le prix unitaire HTC d'un livre : ");
+        let quantity = prompt("Entrez la quantité de livres à acheter : ");
+
+        let priceVAT = priceEVAT * quantity * (1 + VAT);
+
+        console.log(`Le prix TTC de ${quantity} livre(s) ` +
+            `à ${priceEVAT}€ vaut ${priceVAT}€`);
     </script>
 
 </body>
