@@ -11,11 +11,32 @@
 <body>
     <h1>Exercice : DOM - 01</h1>
 
-    <ul>
-
+    <ul id="list">
+        <!-- Li vont se générer avec le bouton -->
     </ul>
 
-    <button></button>
+    <button id="btn">Ajouter un item</button>
+
+    <script>
+        // Créez un programme qui permet d’ajouter 
+        // un élément à une liste lorsque l’on clique 
+        // sur un bouton.
+        const list = document.getElementById('list')
+        const btn = document.getElementById('btn')
+
+        btn.onclick = addItem;
+
+        function addItem() {
+            // 1. Créer le LI
+            const li = document.createElement('li')
+
+            // 2. Modifier le LI
+            li.textContent = "item"
+
+            // 3. Ajouter le LI au UL
+            list.appendChild(li)
+        }
+    </script>
 
 </body>
 
