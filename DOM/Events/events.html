@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Title</h1>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quos fugiat molestias quaerat nulla voluptatibus? Commodi ab asperiores, nihil similique deleniti mollitia alias fugiat quidem nam cumque reprehenderit, odio numquam. Quia, odio dicta
+            officia neque sequi natus, voluptas inventore in perferendis consequatur, itaque magni quod? Corrupti ab quasi, laborum debitis sunt laudantium iure, quod amet, autem inventore asperiores. Assumenda, blanditiis.</p>
+        <p id="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure vero laboriosam quod voluptatibus totam vel nulla adipisci praesentium, debitis maiores est ea fugit ex veniam quos quibusdam, facilis accusamus. In? Ducimus, ipsa iure! In, ratione,
+            cum commodi deserunt nihil vel quod laudantium, id quibusdam fugit numquam nobis illum! Aliquid a iusto eveniet dicta natus exercitationem dolor doloremque vitae fugit ea.</p>
+
+        <!-- 
+            <button onclick="changeTitle()" id="btn">Changer le titre</button> 
+        -->
+        <button id="btn">Changer le titre</button>
+
+        <script>
+            const container = document.getElementById('container')
+            const title = document.getElementById('title')
+            const p1 = document.getElementById('p1')
+            const p2 = document.getElementById('p2')
+            const btn = document.getElementById('btn')
+
+            // btn.onclick = changeTitle;
+            // btn.addEventListener('click', changeTitle)
+
+            // Fonction anonyme = fonction qui ne porte pas de nom
+            // btn.onclick = function() {
+            //     changeTitle("Quentin")
+            //     console.log("Woaw ! Tu as changé ton titre !");
+            // };
+
+            // Fonction flechée = fonction ECMAScript6 (ES6)
+            btn.onclick = () => {
+                changeTitle("Quentin");
+                console.log("Woaw !");
+            }
+
+            function changeTitle(titleText) {
+                title.innerText = titleText;
+                event.target.innerText = "Oops!"
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
