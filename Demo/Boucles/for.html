@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Boucle = Répéter une série d'instructions
+        // un certain nombre de fois
+
+        // Initialisation ; Condition ; Itération
+        // i ++ => i += 1 => i = i + 1
+        for (let i = 1; i <= 10; i++) {
+            console.log(`i : ${i}`);
+        }
+
+        // forin
+        const firstNames = ["Quentin", "Alice", "Edouard", "Julien"];
+        console.log(firstNames);
+
+        // Key in Object
+        for (const index in firstNames) {
+            console.log(firstNames[index]);
+        }
+
+        // for (let i = 0; i < firstNames.length; i++) {
+        //     console.log(firstNames[i]);
+        // }
+
+        // forof 
+        // Iterator of object
+        for (const firstName of firstNames) {
+            console.log(firstName);
+        }
+
+        for (const letter of "word") {
+            console.log(letter);
+        }
+    </script>
+</body>
+
+</html>
